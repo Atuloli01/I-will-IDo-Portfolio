@@ -4,7 +4,7 @@
 
 - 🌍  I'm based in India
 - 🖥️  See my portfolio at [Fist - 👊🏼]()
-- ✉️  You can contact me at [useforalljob1@gmail.com](mailto:atuloli.27in.tech@gmail.com)
+- ✉️  You can contact me at [atuloli.27in.tech@gmail.com](mailto:atuloli.27in.tech@gmail.com)
 - 🧠  I'm learning AWS & MLOps | Front End | Competitive Programming
 - 🤝  I'm open to collaborating on AI/ML Engineering | Data Science | GenAI & Prompt Engineering
 - ⚡  I'm Batman
