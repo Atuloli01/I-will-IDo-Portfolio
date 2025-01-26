@@ -1,4 +1,4 @@
-# Hi 👋 My name is Atul Oli
+# Hi 👋 My name is Atul Oli :)
 
 ## Software Engineer
 
