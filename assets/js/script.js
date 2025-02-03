@@ -1,21 +1,5 @@
 "use strict";
 
-// script.js
-
-const darkModeToggle = document.getElementById("darkModeToggle");
-
-darkModeToggle.addEventListener("click", () => {
-  // Toggle the "dark-mode" class on the body
-  document.body.classList.toggle("dark-mode");
-
-  // Change button text based on mode
-  if (document.body.classList.contains("dark-mode")) {
-    darkModeToggle.textContent = " Light Mode";
-  } else {
-    darkModeToggle.textContent = " Dark Mode";
-  }
-});
-
 function showPopup() {
   const popupImage = document.querySelector(".popup-image");
   popupImage.style.display = "block"; // Show the popup image
@@ -167,3 +151,33 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+const darkModeToggle = document.getElementById("darkModeToggle");
+const modeIcon = document.getElementById("modeIcon");
+const body = document.body;
+
+// Function to update the icon and save the theme preference
+function updateButtonText() {
+  if (body.classList.contains("dark-mode")) {
+    modeIcon.src = "./assets/images/sun-icon.png"; // Switch to moon icon
+    modeIcon.alt = "Dark Mode";
+    localStorage.setItem("theme", "dark-mode"); // Save dark mode preference
+  } else {
+    modeIcon.src = "./assets/images/moon-icon.png"; // Switch to sun icon
+    modeIcon.alt = "Light Mode";
+    localStorage.setItem("theme", "light-mode"); // Save light mode preference
+  }
+}
+
+// Apply the saved theme on page load
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark-mode") {
+  body.classList.add("dark-mode");
+}
+updateButtonText(); // Apply saved theme and update icon
+
+// Toggle Dark/Light Mode on button click
+darkModeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+  updateButtonText(); // Update icon and save preference
+});

@@ -43,16 +43,17 @@
   <!--
     - #MAIN
   -->
-
-  <main>
+  <main id="mode">
     <h2>
-    <button id="darkModeToggle" class="dark-mode-btn">Switch Mode</button>
+      <button id="darkModeToggle" class="dark-mode-btn">
+        <img src="./assets/images/sun-icon.png" alt="Light Mode" id="modeIcon">
+      </button>
     </h2>
+    
 
     <!--
       - #SIDEBAR
     -->
-
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
@@ -228,7 +229,7 @@
       <!--
         - #ABOUT
       -->
-
+<div >
       <article class="about  active" data-page="about">
 
         <header>
@@ -589,21 +590,6 @@
         </section>
 
       </article>
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
       <!--
         - #RESUME
       -->
@@ -765,16 +751,8 @@
               <p class="timeline-text">
                 Experienced in ETL process, parsing, cleaning, processing and visualizing the data.
             </li>
-
-
-
-
-
-
-
           </ol>
-
-
+        
         </section>
 
         <section class="skill">
@@ -1298,14 +1276,6 @@
       </article>
 
     </div>
-
-  </main>
-
-
-
-
-
-
   <!--
     - custom js link
   -->
@@ -1316,7 +1286,8 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+</div>
+</main>
 </body>
 
 </html>
